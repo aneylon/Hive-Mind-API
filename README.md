@@ -16,9 +16,14 @@ Run `nodemon` from the root directory so that the server will restart when chang
 
 ## Todos
 
-- error handling
-- logging
-- auth
+- [] Set up routes
+  - [] Todos
+  - [] Posts
+  - [] Users
+- [] auth
+- [] tests
+- [] error handling
+- [] logging
 - [x] connect to database
   - [x] post data
   - [x] get data
@@ -26,8 +31,3 @@ Run `nodemon` from the root directory so that the server will restart when chang
   - [x] format existing files
 - [x] dotenv
 - [x] morgan
-
-- Set up routes
-  - Todos
-  - Posts
-  - Users

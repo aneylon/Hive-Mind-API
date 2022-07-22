@@ -2,7 +2,9 @@
 
 Backend for Hive Mind
 
-## Running
+## Running locally
+
+Run `yarn install` to install all dependencies
 
 Add a .env file to the root of the project with the following settings
 
@@ -14,12 +16,19 @@ MORGAN_LOGGING = "dev"
 
 Run `nodemon` from the root directory so that the server will restart when changes are made.
 
+To manuall force a restart of nodemon type `rs`
+
 ## Todos
 
 - [] Set up routes
   - [] Todos
   - [] Posts
   - [] Users
+    - [] Sign up
+    - [] Sign in
+    - [] get user
+    - [] get users
+    - [] update user
 - [] auth
 - [] tests
 - [] error handling
@@ -31,3 +40,4 @@ Run `nodemon` from the root directory so that the server will restart when chang
   - [x] format existing files
 - [x] dotenv
 - [x] morgan
+- [ ] Postman Testing

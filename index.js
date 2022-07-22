@@ -11,6 +11,8 @@ app.use(express.json())
 
 const todoRoutes = require('./routes/todo')
 app.use('/todo', todoRoutes)
+const userRoutes = require('./routes/user')
+app.use('/user', userRoutes)
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection

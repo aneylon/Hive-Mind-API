@@ -25,6 +25,9 @@ To manuall force a restart of nodemon type `rs`
   - [] Posts
   - [] Users
     - [] Sign up
+      - [] Password reqs
+      - [] email reqs
+      - [] salt and hash password
     - [] Sign in
     - [] get user
     - [] get users

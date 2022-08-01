@@ -1,10 +1,13 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const morgan = require('morgan')
 const port = process.env.PORT
 const mongoose = require('mongoose')
 const mongoDB = process.env.MONGO_DATABASE
+
+app.use(cors())
 
 app.use(morgan(process.env.MORGAN_LOGGING))
 app.use(express.json())

@@ -1,11 +1,15 @@
 const express = require('express')
 const router = express.Router()
 const loggingMiddleware = require('../middleware/logger')
+const requireAuth = require('../middleware/requireAuth')
 const Todo = require('../models/todo')
 
 router.use(loggingMiddleware)
 
+router.use(requireAuth)
+
 router.get('/', (req, res) => {
+	console.log('user', req.user)
 	console.log('getting all todos')
 	Todo.find().exec((err, todos) => {
 		if (err) return res.json({ success: false, error: err })

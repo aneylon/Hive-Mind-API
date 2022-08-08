@@ -20,6 +20,8 @@ const bugRoutes = require('./routes/bug')
 app.use('/bug', bugRoutes)
 const messageRoutes = require('./routes/message')
 app.use('/message', messageRoutes)
+const settlementRoutes = require('./routes/settlement')
+app.use('/settlement', settlementRoutes)
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
